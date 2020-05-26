@@ -1,0 +1,9 @@
+<h1>tema les articles du Monde ma couille</h1>
+<ul>
+  <% @articles.each do |article| %>
+  <li><%= link_to article.title, article_path(article) %></li>
+  <% end %>
+  <br>  <br>
+  <%= link_to 'Create a new article poto', new_article_path %>
+
+</ul>
